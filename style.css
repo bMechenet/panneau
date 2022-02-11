@@ -52,31 +52,31 @@ html,body {
 }
 
 #switch1{
-    width : 50px;
-    height : 50px;
-    left : 71.2%;
+    width : 70px;
+    height : 70px;
+    left : 70.7%;
     top : 77%;
 }
 
 #switch2{
-    width : 50px;
-    height : 50px;
-    left : 77.5%;
+    width : 70px;
+    height : 70px;
+    left : 77%;
     top : 77%;
 }
 
 #switch3{
-    width : 50px;
-    height : 50px;
-    left : 71.2%;
-    top : 90%;
+    width : 70px;
+    height : 70px;
+    left : 71%;
+    top : 90.5%;
 }
 
 #switch4{
-    width : 50px;
-    height : 50px;
+    width : 70px;
+    height : 70px;
     left : 77.5%;
-    top : 90%;
+    top : 90.5%;
 }
 
 #btn1-1{

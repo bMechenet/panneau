@@ -147,8 +147,8 @@ lightRed.diffuse = new BABYLON.Color3(1,0,0);
 lightRed.intensity = 5;
 
 var lightBlue = new BABYLON.PointLight("pointBlue", new BABYLON.Vector3(0.55, 0.03, 0.83), scene);
-lightBlue.diffuse = new BABYLON.Color3(0,0,1);
-lightBlue.intensity = 0;
+lightBlue.diffuse = new BABYLON.Color3(0,0,0.5);
+lightBlue.intensity = 50;
 
 BABYLON.SceneLoader.Append("objet/panneau/", "panneau.glb", scene, function (scene) {
 
@@ -198,34 +198,6 @@ BABYLON.SceneLoader.Append("objet/panneau/", "panneau.glb", scene, function (sce
 
     scene.getMeshByID("molette").position = new BABYLON.Vector3(0.13,-0.04,-0.12);
 });
-
-
-
-
-const variableBlue = new BABYLON.Animation("variableBlue", "intensity", 10, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
-const keyFramesBlue = [];
-
-keyFramesBlue.push({
-    frame: 0,
-    value: 0
-});
-keyFramesBlue.push({
-    frame: 10,
-    value: 0
-});
-keyFramesBlue.push({
-    frame: 30,
-    value: 5
-});
-keyFramesBlue.push({
-    frame: 50,
-    value: 0
-});
-
-variableBlue.setKeys(keyFramesBlue);
-lightBlue.animations.push(variableBlue);
-scene.beginAnimation(lightBlue, 0, 50, true);
-
 
 const variableRed = new BABYLON.Animation("variableRed", "intensity", 10, BABYLON.Animation.ANIMATIONTYPE_FLOAT, BABYLON.Animation.ANIMATIONLOOPMODE_CYCLE);
 const keyFramesRed = [];
