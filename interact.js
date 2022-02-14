@@ -255,7 +255,7 @@ function checkArray(){
             break;
         }
         if(i == 21){
-            console.log("c'est bon !")
+            window.alert("c'est bon !")
         }
 
     }
