@@ -1,6 +1,18 @@
 var reponse = ["false", "false", "false", "true", "45", "false", "true", "false", "true", "true", "true", "true", "false", "false", "true", "false", "false", "true", "1", "3", "1"];
 var inputReponse = ["false", "false", "false", "false", "25", "false", "false", "false", "false", "false", "false", "false", "false", "false", "false", "false", "false", "false", "2", "2", "2"]
 
+
+
+$("#holder-image").width($("#canvas").width());
+$("#holder-image").height($("#canvas").height());
+
+$("#holder-image i").click(function(){
+    $("#holder-image").fadeOut();
+})
+
+
+
+
 $("#lettrea").click(function(){
     if($(this).attr("val") == "false"){
         $(this).attr("val", "true");
@@ -255,7 +267,10 @@ function checkArray(){
             break;
         }
         if(i == 21){
-            window.alert("c'est bon !")
+            $("#holder-image").css("background-image", "url('objet/fin.png')");
+            //    $("#holder-image").css("background-color", "rgba(0,0,0,0.5)");
+                $("#holder-image i").remove();
+                $("#holder-image").fadeIn();
         }
 
     }
